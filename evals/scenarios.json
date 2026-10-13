@@ -1,0 +1,36 @@
+{
+  "schema_version": "agent-eval-scenarios/v1",
+  "description": "由隔离演示数据库生成的供应链决策回归场景。动作与审批预期均由当前确定性业务规则固定。",
+  "cases": [
+    {
+      "id": "stable_inventory_hold",
+      "name": "稳定库存无需补货",
+      "product_id": 1,
+      "expected_decision_type": "HOLD",
+      "expected_approval_required": false,
+      "expected_min_tool_calls": 2,
+      "expected_required_tools": ["inspect_inventory_position", "inspect_inbound_shipments"],
+      "tags": ["stable", "auto-execution", "hold"]
+    },
+    {
+      "id": "volatile_demand_replenishment",
+      "name": "波动需求触发受约束补货",
+      "product_id": 2,
+      "expected_decision_type": "REORDER",
+      "expected_approval_required": true,
+      "expected_min_tool_calls": 2,
+      "expected_required_tools": ["forecast_demand", "compare_supplier_options"],
+      "tags": ["volatile", "reorder", "hitl"]
+    },
+    {
+      "id": "critical_shortage_escalation",
+      "name": "高缺货风险进入审批",
+      "product_id": 3,
+      "expected_decision_type": "REORDER",
+      "expected_approval_required": true,
+      "expected_min_tool_calls": 2,
+      "expected_required_tools": ["inspect_inbound_shipments", "stress_test_plan"],
+      "tags": ["shortage", "delayed-shipment", "hitl"]
+    }
+  ]
+}

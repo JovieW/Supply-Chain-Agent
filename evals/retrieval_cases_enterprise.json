@@ -1,0 +1,2264 @@
+{
+  "schema_version": "rag-retrieval-golden/v3",
+  "description": "Synthetic enterprise retrieval judgements with policy, contract, incident, playbook, scope, and negative-control coverage.",
+  "dataset_notice": "All entities and operational narratives are synthetic; they are not customer or production data.",
+  "cases": [
+    {
+      "id": "policy_inventory-abcxyz",
+      "name": "企业制度中关于ABC-XYZ的控制要求是什么",
+      "query": "企业制度中关于ABC-XYZ的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-INVENTORY-ABCXYZ-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_demand-spike",
+      "name": "企业制度中关于需求尖峰的控制要求是什么",
+      "query": "企业制度中关于需求尖峰的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-DEMAND-SPIKE-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_cold-chain",
+      "name": "企业制度中关于冷链温控的控制要求是什么",
+      "query": "企业制度中关于冷链温控的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-COLD-CHAIN-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_quality-quarantine",
+      "name": "企业制度中关于质量隔离的控制要求是什么",
+      "query": "企业制度中关于质量隔离的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-QUALITY-QUARANTINE-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_dual-sourcing",
+      "name": "企业制度中关于双供份额的控制要求是什么",
+      "query": "企业制度中关于双供份额的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-DUAL-SOURCING-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_moq-rounding",
+      "name": "企业制度中关于MOQ包装倍数的控制要求是什么",
+      "query": "企业制度中关于MOQ包装倍数的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-MOQ-ROUNDING-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_obsolescence",
+      "name": "企业制度中关于EOL呆滞的控制要求是什么",
+      "query": "企业制度中关于EOL呆滞的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-OBSOLESCENCE-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_semiconductor-allocation",
+      "name": "企业制度中关于芯片分配的控制要求是什么",
+      "query": "企业制度中关于芯片分配的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-SEMICONDUCTOR-ALLOCATION-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_pharma-trace",
+      "name": "企业制度中关于批次追溯的控制要求是什么",
+      "query": "企业制度中关于批次追溯的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-PHARMA-TRACE-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_auto-line-stop",
+      "name": "企业制度中关于停线风险的控制要求是什么",
+      "query": "企业制度中关于停线风险的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-AUTO-LINE-STOP-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_esd-handling",
+      "name": "企业制度中关于ESD静电防护的控制要求是什么",
+      "query": "企业制度中关于ESD静电防护的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-ESD-HANDLING-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "policy_reverse-logistics",
+      "name": "企业制度中关于逆向物流的控制要求是什么",
+      "query": "企业制度中关于逆向物流的控制要求是什么",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-REVERSE-LOGISTICS-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "contract_supplier_101",
+      "name": "供应商101的晶圆交付合同履约、交付和升级条款",
+      "query": "供应商101的晶圆交付合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-101"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-102"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_102",
+      "name": "供应商102的汽车件PPAP合同履约、交付和升级条款",
+      "query": "供应商102的汽车件PPAP合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-102"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-103"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        102
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_103",
+      "name": "供应商103的冷链承运合同履约、交付和升级条款",
+      "query": "供应商103的冷链承运合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-103"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-104"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        103
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_104",
+      "name": "供应商104的质量索赔合同履约、交付和升级条款",
+      "query": "供应商104的质量索赔合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-104"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-105"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        104
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_105",
+      "name": "供应商105的网络芯片安全库存合同履约、交付和升级条款",
+      "query": "供应商105的网络芯片安全库存合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-105"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-106"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        105
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_106",
+      "name": "供应商106的危化品运输合同履约、交付和升级条款",
+      "query": "供应商106的危化品运输合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-106"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-107"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        106
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_107",
+      "name": "供应商107的航空件证书合同履约、交付和升级条款",
+      "query": "供应商107的航空件证书合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-107"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-108"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        107
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_108",
+      "name": "供应商108的食品包装迁移合同履约、交付和升级条款",
+      "query": "供应商108的食品包装迁移合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-108"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-109"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        108
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_109",
+      "name": "供应商109的电芯辅料产能合同履约、交付和升级条款",
+      "query": "供应商109的电芯辅料产能合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-109"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-110"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        109
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_110",
+      "name": "供应商110的传感器校准合同履约、交付和升级条款",
+      "query": "供应商110的传感器校准合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-110"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-111"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        110
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_111",
+      "name": "供应商111的精密件模具合同履约、交付和升级条款",
+      "query": "供应商111的精密件模具合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-111"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-112"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        111
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "contract_supplier_112",
+      "name": "供应商112的医械无菌包装合同履约、交付和升级条款",
+      "query": "供应商112的医械无菌包装合同履约、交付和升级条款",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-112"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-101"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ]
+    },
+    {
+      "id": "incident_port-congestion",
+      "name": "华东港口拥堵应急复盘中采取了什么措施，有什么经验",
+      "query": "华东港口拥堵应急复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-PORT-CONGESTION-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_chip-shortage",
+      "name": "晶圆产能短缺分配复盘中采取了什么措施，有什么经验",
+      "query": "晶圆产能短缺分配复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-CHIP-SHORTAGE-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_temp-excursion",
+      "name": "冷链温度偏离事件复盘中采取了什么措施，有什么经验",
+      "query": "冷链温度偏离事件复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-TEMP-EXCURSION-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_quality-recall",
+      "name": "关键部件质量召回复盘中采取了什么措施，有什么经验",
+      "query": "关键部件质量召回复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-QUALITY-RECALL-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_customs-delay",
+      "name": "进口清关资料缺失复盘中采取了什么措施，有什么经验",
+      "query": "进口清关资料缺失复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-CUSTOMS-DELAY-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_cyber-outage",
+      "name": "供应商网络攻击中断复盘中采取了什么措施，有什么经验",
+      "query": "供应商网络攻击中断复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-CYBER-OUTAGE-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_earthquake",
+      "name": "地震导致单一来源停产复盘中采取了什么措施，有什么经验",
+      "query": "地震导致单一来源停产复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-EARTHQUAKE-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_flood",
+      "name": "洪水造成内陆运输中断复盘中采取了什么措施，有什么经验",
+      "query": "洪水造成内陆运输中断复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-FLOOD-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_air-capacity",
+      "name": "旺季航空舱位紧张复盘中采取了什么措施，有什么经验",
+      "query": "旺季航空舱位紧张复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-AIR-CAPACITY-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_bankruptcy",
+      "name": "二级供应商破产风险复盘中采取了什么措施，有什么经验",
+      "query": "二级供应商破产风险复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-BANKRUPTCY-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_labor-strike",
+      "name": "工厂罢工交付中断复盘中采取了什么措施，有什么经验",
+      "query": "工厂罢工交付中断复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-LABOR-STRIKE-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "incident_packaging-shortage",
+      "name": "包装材料短缺复盘中采取了什么措施，有什么经验",
+      "query": "包装材料短缺复盘中采取了什么措施，有什么经验",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-PACKAGING-SHORTAGE-2026"
+      ],
+      "expected_document_types": [
+        "historical_event"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "incident",
+        "lesson"
+      ]
+    },
+    {
+      "id": "playbook_alternate-source",
+      "name": "发生替代供方问题时应该按照什么步骤处置",
+      "query": "发生替代供方问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-ALTERNATE-SOURCE-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_expedite",
+      "name": "发生加急运输问题时应该按照什么步骤处置",
+      "query": "发生加急运输问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-EXPEDITE-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_allocation",
+      "name": "发生短缺分配问题时应该按照什么步骤处置",
+      "query": "发生短缺分配问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-ALLOCATION-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_recall",
+      "name": "发生产品召回问题时应该按照什么步骤处置",
+      "query": "发生产品召回问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-RECALL-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_customs",
+      "name": "发生清关异常问题时应该按照什么步骤处置",
+      "query": "发生清关异常问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-CUSTOMS-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_supplier-recovery",
+      "name": "发生交付恢复问题时应该按照什么步骤处置",
+      "query": "发生交付恢复问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-SUPPLIER-RECOVERY-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_data-quality",
+      "name": "发生主数据异常问题时应该按照什么步骤处置",
+      "query": "发生主数据异常问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-DATA-QUALITY-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_bcp",
+      "name": "发生业务连续性问题时应该按照什么步骤处置",
+      "query": "发生业务连续性问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-BCP-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_capacity",
+      "name": "发生产能爬坡问题时应该按照什么步骤处置",
+      "query": "发生产能爬坡问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-CAPACITY-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_quality-escalation",
+      "name": "发生质量升级问题时应该按照什么步骤处置",
+      "query": "发生质量升级问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-QUALITY-ESCALATION-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_late-inbound",
+      "name": "发生在途延期问题时应该按照什么步骤处置",
+      "query": "发生在途延期问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-LATE-INBOUND-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "playbook_cost-change",
+      "name": "发生价格异常问题时应该按照什么步骤处置",
+      "query": "发生价格异常问题时应该按照什么步骤处置",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-COST-CHANGE-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "playbook",
+        "operations"
+      ]
+    },
+    {
+      "id": "governance_no_retired_expedite",
+      "name": "发生缺货时是否应该无条件采用空运加急",
+      "query": "发生缺货时是否应该无条件采用空运加急",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-EXPEDITE-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [
+        "RET-EXPEDITE-2019"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "negative-control",
+        "retired"
+      ]
+    },
+    {
+      "id": "governance_no_draft_auto_order",
+      "name": "模型是否可以绕过审批直接创建采购单",
+      "query": "模型是否可以绕过审批直接创建采购单",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "SOP-APPROVAL-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [
+        "DRAFT-AUTO-ORDER"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "negative-control",
+        "draft"
+      ]
+    },
+    {
+      "id": "governance_no_expired_contract",
+      "name": "供应商交付延期后的合同责任和升级要求",
+      "query": "供应商交付延期后的合同责任和升级要求",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "CONTRACT-SUPPLIER-FRAMEWORK-001"
+      ],
+      "expected_document_types": [
+        "contract"
+      ],
+      "forbidden_document_ids": [
+        "EXP-CONTRACT-2024"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        1
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "negative-control",
+        "expired"
+      ]
+    },
+    {
+      "id": "governance_no_quality_waiver",
+      "name": "关键缺陷物料应该如何隔离和放行",
+      "query": "关键缺陷物料应该如何隔离和放行",
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-QUALITY-QUARANTINE-001"
+      ],
+      "expected_document_types": [
+        "sop"
+      ],
+      "forbidden_document_ids": [
+        "RET-QUALITY-WAIVER"
+      ],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "tags": [
+        "negative-control",
+        "retired"
+      ]
+    },
+    {
+      "id": "hard_semantic_inventory_inbound_gap",
+      "name": "仓里撑不到已下单货物到达时不能把风险当作解除",
+      "query": "仓里现有数量只够支撑很短时间，已经下单的货又赶不上消耗窗口，计划员能否把这次断供风险当作已经解决",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": ["SOP-INVENTORY-001"],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 2,
+      "supplier_ids": [1, 2],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["semantic-hard-positive", "low-lexical-overlap"],
+      "tags": ["hard-positive", "inventory", "paraphrase"]
+    },
+    {
+      "id": "hard_semantic_supplier_tradeoff",
+      "name": "非紧急场景下稳定供方与快速爽约供方的选择",
+      "query": "两家供方价格接近，一家经常爽约但到货快，另一家表现稳定但慢一点，在并非火烧眉毛的时候应该偏向谁",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": ["SOP-SUPPLIER-SLA-001"],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 2,
+      "supplier_ids": [1, 2],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["semantic-hard-positive", "low-lexical-overlap"],
+      "tags": ["hard-positive", "supplier-risk", "paraphrase"]
+    },
+    {
+      "id": "hard_semantic_expedite_economics",
+      "name": "用避免的断供损失判断是否切换快速渠道",
+      "query": "换更快渠道多花的钱明显小于断供造成的损失，而且新到达时间能赶上缺口窗口，这种情况下是否值得切换",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": ["ENT-PLAYBOOK-EXPEDITE-001"],
+      "forbidden_document_ids": ["RET-EXPEDITE-2019"],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [101, 102, 103],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["semantic-hard-positive", "low-lexical-overlap"],
+      "tags": ["hard-positive", "logistics", "paraphrase"]
+    },
+    {
+      "id": "hard_semantic_quality_hold",
+      "name": "连续关键质量问题后的可用量与恢复确认",
+      "query": "同一来料连续出现致命问题，这批货还能算作可以对客户承诺的数量吗，恢复使用又需要哪些部门共同确认",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": ["ENT-SOP-QUALITY-QUARANTINE-001"],
+      "forbidden_document_ids": ["RET-QUALITY-WAIVER"],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [101, 102, 103],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["semantic-hard-positive", "low-lexical-overlap"],
+      "tags": ["hard-positive", "quality", "paraphrase"]
+    },
+    {
+      "id": "hard_semantic_customs_documents",
+      "name": "口岸票证不一致时不得直接修改受控单证",
+      "query": "境外货物卡在口岸，票证字段互相对不上，为了赶时间能否先直接改掉受控材料再补手续",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": ["ENT-PLAYBOOK-CUSTOMS-001"],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [101, 102, 103],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["semantic-hard-positive", "low-lexical-overlap"],
+      "tags": ["hard-positive", "customs", "paraphrase"]
+    },
+    {
+      "id": "hard_cross_domain_low_stock_late_inbound",
+      "name": "低库存、晚到在途、加急与审批的完整证据链",
+      "query": "现货已经低于警戒水平，唯一一票海运赶不上生产消耗窗口。请同时找出如何计算真实可用库存、是否改走快速渠道、晚到在途如何处理以及谁必须批准额外费用的依据",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": [
+        "SOP-INVENTORY-001",
+        "SOP-LOGISTICS-001",
+        "SOP-APPROVAL-001",
+        "ENT-PLAYBOOK-LATE-INBOUND-001"
+      ],
+      "forbidden_document_ids": ["RET-EXPEDITE-2019"],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 2,
+      "supplier_ids": [1, 2],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["cross-domain", "multi-evidence", "semantic-hard-positive"],
+      "tags": ["inventory", "logistics", "approval", "evidence-chain"]
+    },
+    {
+      "id": "hard_cross_domain_cold_chain_excursion",
+      "name": "冷链偏温的制度、合同与历史处置证据链",
+      "query": "供应商103承运的药品途中达到11摄氏度并持续47分钟。请找齐这批货能否计入可用量、承运方应承担什么记录和通知义务，以及过去同类事件如何处置的依据",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": [
+        "ENT-SOP-COLD-CHAIN-001",
+        "ENT-CONTRACT-SUPPLIER-103",
+        "ENT-INCIDENT-TEMP-EXCURSION-2026"
+      ],
+      "forbidden_document_ids": ["ENT-CONTRACT-SUPPLIER-102"],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [103],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["cross-domain", "multi-evidence"],
+      "tags": ["policy", "contract", "incident", "evidence-chain"]
+    },
+    {
+      "id": "hard_cross_domain_quality_recall",
+      "name": "关键缺陷召回的隔离、响应与历史经验链",
+      "query": "关键部件被追溯到问题批次并可能流向客户，需要同时说明库存现在如何处理、召回应按什么步骤推进，以及历史上如何快速定位和切换供应来源",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": [
+        "ENT-SOP-QUALITY-QUARANTINE-001",
+        "ENT-PLAYBOOK-RECALL-001",
+        "ENT-INCIDENT-QUALITY-RECALL-2026"
+      ],
+      "forbidden_document_ids": ["RET-QUALITY-WAIVER"],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [101, 102, 103],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["cross-domain", "multi-evidence"],
+      "tags": ["policy", "playbook", "incident", "evidence-chain"]
+    },
+    {
+      "id": "hard_cross_domain_customs_response",
+      "name": "清关异常的当前处置与历史改进双证据",
+      "query": "原产地证明字段错误导致进口件被扣，既要给出当前核对和协同步骤，也要找到过去因此延误后形成的预防措施",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-CUSTOMS-001",
+        "ENT-INCIDENT-CUSTOMS-DELAY-2026"
+      ],
+      "forbidden_document_ids": [],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [101, 102, 103],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["cross-domain", "multi-evidence"],
+      "tags": ["playbook", "incident", "evidence-chain"]
+    },
+    {
+      "id": "hard_cross_domain_port_disruption",
+      "name": "港口晚到场景的历史经验、加急经济性与物流规则",
+      "query": "海运晚到九天且可能让核心客户停线，请同时寻找过去如何拆分运输、当前是否值得支付更快渠道费用，以及预计到达时间应如何判定风险",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": [
+        "ENT-INCIDENT-PORT-CONGESTION-2026",
+        "ENT-PLAYBOOK-EXPEDITE-001",
+        "SOP-LOGISTICS-001"
+      ],
+      "forbidden_document_ids": ["RET-EXPEDITE-2019"],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 3,
+      "supplier_ids": [1, 2, 3],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["cross-domain", "multi-evidence"],
+      "tags": ["logistics", "playbook", "incident", "evidence-chain"]
+    },
+    {
+      "id": "hard_distractor_recall_retrospective",
+      "name": "询问过去召回经验时应命中复盘而非操作手册",
+      "query": "过去那次关键部件失效是怎样在三小时内圈定受影响范围，并通过暂停原供方和启用备供避免继续扩大的",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": ["ENT-INCIDENT-QUALITY-RECALL-2026"],
+      "forbidden_document_ids": ["ENT-PLAYBOOK-RECALL-001"],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [101, 102, 103],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["near-neighbor-discrimination"],
+      "tags": ["incident", "distractor"]
+    },
+    {
+      "id": "hard_distractor_recall_procedure",
+      "name": "询问当前召回步骤时应命中手册而非历史复盘",
+      "query": "现在发现产品可能需要召回，确认受影响批次以后，冻结、停运、客户通知、退回和处置记录应该按什么顺序推进",
+      "top_k": 5,
+      "metric_ks": [1, 3, 5],
+      "expected_document_ids": ["ENT-PLAYBOOK-RECALL-001"],
+      "forbidden_document_ids": ["ENT-INCIDENT-QUALITY-RECALL-2026"],
+      "minimum_recall": 1.0,
+      "minimum_reciprocal_rank": 0.2,
+      "product_id": 1001,
+      "supplier_ids": [101, 102, 103],
+      "region": "cn",
+      "as_of": "2026-09-13",
+      "difficulty": "hard",
+      "capabilities": ["near-neighbor-discrimination"],
+      "tags": ["playbook", "distractor"]
+    }
+  ]
+}

@@ -1,0 +1,2581 @@
+{
+  "schema_version": "rag-retrieval-report/v2",
+  "thresholds": {
+    "schema_version": "rag-retrieval-thresholds/v1",
+    "minimum_case_pass_rate": 0.9,
+    "minimum_mean_recall_at_k": 0.9,
+    "minimum_mean_reciprocal_rank": 0.75,
+    "minimum_applicability_pass_rate": 1.0,
+    "maximum_forbidden_leakage_rate": 0.0,
+    "maximum_p95_latency_ms": 1000
+  },
+  "aggregate": {
+    "case_count": 52,
+    "passed_case_count": 51,
+    "pass_rate": 0.9808,
+    "mean_recall_at_k": 0.9808,
+    "mean_reciprocal_rank": 0.9359,
+    "applicability_pass_rate": 1.0,
+    "forbidden_leakage_rate": 0.0,
+    "mean_duplicate_document_count": 0.0,
+    "latency_ms": {
+      "mean": 210.3,
+      "p50": 7.43,
+      "p95": 9.29,
+      "max": 10553.52
+    },
+    "mean_hit_rate_at_1": 0.9038,
+    "mean_hit_rate_at_3": 0.9808,
+    "mean_hit_rate_at_5": 0.9808,
+    "mean_ndcg_at_1": 0.9038,
+    "mean_ndcg_at_3": 0.9473,
+    "mean_ndcg_at_5": 0.9473,
+    "mean_precision_at_1": 0.9038,
+    "mean_precision_at_3": 0.3269,
+    "mean_precision_at_5": 0.1962,
+    "mean_recall_at_1": 0.9038,
+    "mean_recall_at_3": 0.9808,
+    "mean_recall_at_5": 0.9808,
+    "quality_gates": {
+      "minimum_case_pass_rate": true,
+      "minimum_mean_recall_at_k": true,
+      "minimum_mean_reciprocal_rank": true,
+      "minimum_applicability_pass_rate": true,
+      "maximum_forbidden_leakage_rate": true,
+      "maximum_p95_latency_ms": true
+    },
+    "passed": false
+  },
+  "cases": [
+    {
+      "case_id": "policy_inventory-abcxyz",
+      "name": "企业制度中关于ABC-XYZ的控制要求是什么",
+      "query": "企业制度中关于ABC-XYZ的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-INVENTORY-ABCXYZ-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-INVENTORY-ABCXYZ-001",
+        "ENT-SOP-DUAL-SOURCING-001",
+        "ENT-SOP-ESD-HANDLING-001",
+        "ENT-SOP-MOQ-ROUNDING-001",
+        "ENT-SOP-SEMICONDUCTOR-ALLOCATION-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 10553.52,
+      "passed": true
+    },
+    {
+      "case_id": "policy_demand-spike",
+      "name": "企业制度中关于需求尖峰的控制要求是什么",
+      "query": "企业制度中关于需求尖峰的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-DEMAND-SPIKE-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-DEMAND-SPIKE-001",
+        "ENT-SOP-DUAL-SOURCING-001",
+        "ENT-SOP-SEMICONDUCTOR-ALLOCATION-001",
+        "ENT-SOP-MOQ-ROUNDING-001",
+        "ENT-SOP-OBSOLESCENCE-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 9.99,
+      "passed": true
+    },
+    {
+      "case_id": "policy_cold-chain",
+      "name": "企业制度中关于冷链温控的控制要求是什么",
+      "query": "企业制度中关于冷链温控的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-COLD-CHAIN-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-COLD-CHAIN-001",
+        "ENT-INCIDENT-TEMP-EXCURSION-2026",
+        "ENT-CONTRACT-SUPPLIER-103",
+        "ENT-SOP-ESD-HANDLING-001",
+        "ENT-SOP-DUAL-SOURCING-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.41,
+      "passed": true
+    },
+    {
+      "case_id": "policy_quality-quarantine",
+      "name": "企业制度中关于质量隔离的控制要求是什么",
+      "query": "企业制度中关于质量隔离的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-QUALITY-QUARANTINE-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-QUALITY-QUARANTINE-001",
+        "ENT-SOP-ESD-HANDLING-001",
+        "ENT-SOP-COLD-CHAIN-001",
+        "ENT-SOP-DUAL-SOURCING-001",
+        "ENT-CONTRACT-SUPPLIER-110"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.82,
+      "passed": true
+    },
+    {
+      "case_id": "policy_dual-sourcing",
+      "name": "企业制度中关于双供份额的控制要求是什么",
+      "query": "企业制度中关于双供份额的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-DUAL-SOURCING-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-DUAL-SOURCING-001",
+        "ENT-SOP-MOQ-ROUNDING-001",
+        "ENT-SOP-SEMICONDUCTOR-ALLOCATION-001",
+        "ENT-SOP-DEMAND-SPIKE-001",
+        "ENT-SOP-OBSOLESCENCE-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.33,
+      "passed": true
+    },
+    {
+      "case_id": "policy_moq-rounding",
+      "name": "企业制度中关于MOQ包装倍数的控制要求是什么",
+      "query": "企业制度中关于MOQ包装倍数的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-MOQ-ROUNDING-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-MOQ-ROUNDING-001",
+        "ENT-SOP-DUAL-SOURCING-001",
+        "ENT-SOP-PHARMA-TRACE-001",
+        "ENT-SOP-ESD-HANDLING-001",
+        "ENT-SOP-QUALITY-QUARANTINE-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.58,
+      "passed": true
+    },
+    {
+      "case_id": "policy_obsolescence",
+      "name": "企业制度中关于EOL呆滞的控制要求是什么",
+      "query": "企业制度中关于EOL呆滞的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-OBSOLESCENCE-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-OBSOLESCENCE-001",
+        "ENT-SOP-ESD-HANDLING-001",
+        "ENT-SOP-SEMICONDUCTOR-ALLOCATION-001",
+        "ENT-SOP-PHARMA-TRACE-001",
+        "ENT-SOP-INVENTORY-ABCXYZ-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.95,
+      "passed": true
+    },
+    {
+      "case_id": "policy_semiconductor-allocation",
+      "name": "企业制度中关于芯片分配的控制要求是什么",
+      "query": "企业制度中关于芯片分配的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-SEMICONDUCTOR-ALLOCATION-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-SEMICONDUCTOR-ALLOCATION-001",
+        "ENT-SOP-DUAL-SOURCING-001",
+        "ENT-SOP-ESD-HANDLING-001",
+        "ENT-INCIDENT-CHIP-SHORTAGE-2026",
+        "ENT-SOP-INVENTORY-ABCXYZ-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.67,
+      "passed": true
+    },
+    {
+      "case_id": "policy_pharma-trace",
+      "name": "企业制度中关于批次追溯的控制要求是什么",
+      "query": "企业制度中关于批次追溯的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-PHARMA-TRACE-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-PHARMA-TRACE-001",
+        "ENT-SOP-DUAL-SOURCING-001",
+        "ENT-SOP-QUALITY-QUARANTINE-001",
+        "ENT-SOP-MOQ-ROUNDING-001",
+        "ENT-INCIDENT-QUALITY-RECALL-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.79,
+      "passed": true
+    },
+    {
+      "case_id": "policy_auto-line-stop",
+      "name": "企业制度中关于停线风险的控制要求是什么",
+      "query": "企业制度中关于停线风险的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-AUTO-LINE-STOP-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-AUTO-LINE-STOP-001",
+        "ENT-SOP-ESD-HANDLING-001",
+        "INCIDENT-PORT-STRIKE-2025",
+        "ENT-SOP-OBSOLESCENCE-001",
+        "ENT-INCIDENT-LABOR-STRIKE-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.72,
+      "passed": true
+    },
+    {
+      "case_id": "policy_esd-handling",
+      "name": "企业制度中关于ESD静电防护的控制要求是什么",
+      "query": "企业制度中关于ESD静电防护的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-ESD-HANDLING-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-ESD-HANDLING-001",
+        "ENT-SOP-AUTO-LINE-STOP-001",
+        "ENT-SOP-DUAL-SOURCING-001",
+        "ENT-SOP-COLD-CHAIN-001",
+        "ENT-SOP-OBSOLESCENCE-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.5,
+      "passed": true
+    },
+    {
+      "case_id": "policy_reverse-logistics",
+      "name": "企业制度中关于逆向物流的控制要求是什么",
+      "query": "企业制度中关于逆向物流的控制要求是什么",
+      "tags": [
+        "policy",
+        "governance"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-REVERSE-LOGISTICS-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-SOP-REVERSE-LOGISTICS-001",
+        "ENT-SOP-ESD-HANDLING-001",
+        "ENT-SOP-PHARMA-TRACE-001",
+        "ENT-SOP-DUAL-SOURCING-001",
+        "SOP-LOGISTICS-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.45,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_101",
+      "name": "供应商101的晶圆交付合同履约、交付和升级条款",
+      "query": "供应商101的晶圆交付合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-101"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-102"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-101"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.53,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_102",
+      "name": "供应商102的汽车件PPAP合同履约、交付和升级条款",
+      "query": "供应商102的汽车件PPAP合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-102"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-103"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-102"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.6,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_103",
+      "name": "供应商103的冷链承运合同履约、交付和升级条款",
+      "query": "供应商103的冷链承运合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-103"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-104"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-103",
+        "ENT-SOP-COLD-CHAIN-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.6,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_104",
+      "name": "供应商104的质量索赔合同履约、交付和升级条款",
+      "query": "供应商104的质量索赔合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-104"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-105"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-104"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.96,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_105",
+      "name": "供应商105的网络芯片安全库存合同履约、交付和升级条款",
+      "query": "供应商105的网络芯片安全库存合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-105"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-106"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-105"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.37,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_106",
+      "name": "供应商106的危化品运输合同履约、交付和升级条款",
+      "query": "供应商106的危化品运输合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-106"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-107"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-106"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.98,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_107",
+      "name": "供应商107的航空件证书合同履约、交付和升级条款",
+      "query": "供应商107的航空件证书合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-107"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-108"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-107"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.25,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_108",
+      "name": "供应商108的食品包装迁移合同履约、交付和升级条款",
+      "query": "供应商108的食品包装迁移合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-108"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-109"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-108"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.09,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_109",
+      "name": "供应商109的电芯辅料产能合同履约、交付和升级条款",
+      "query": "供应商109的电芯辅料产能合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-109"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-110"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-109"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.56,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_110",
+      "name": "供应商110的传感器校准合同履约、交付和升级条款",
+      "query": "供应商110的传感器校准合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-110"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-111"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-110"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 10.21,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_111",
+      "name": "供应商111的精密件模具合同履约、交付和升级条款",
+      "query": "供应商111的精密件模具合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-111"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-112"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-111"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.96,
+      "passed": true
+    },
+    {
+      "case_id": "contract_supplier_112",
+      "name": "供应商112的医械无菌包装合同履约、交付和升级条款",
+      "query": "供应商112的医械无菌包装合同履约、交付和升级条款",
+      "tags": [
+        "contract",
+        "supplier-scope"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-112"
+      ],
+      "forbidden_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-101"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-112"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.23,
+      "passed": true
+    },
+    {
+      "case_id": "incident_port-congestion",
+      "name": "华东港口拥堵应急复盘中采取了什么措施，有什么经验",
+      "query": "华东港口拥堵应急复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-PORT-CONGESTION-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-PORT-CONGESTION-2026",
+        "INCIDENT-PORT-STRIKE-2025",
+        "ENT-INCIDENT-AIR-CAPACITY-2026",
+        "ENT-INCIDENT-FLOOD-2026",
+        "ENT-INCIDENT-CYBER-OUTAGE-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.37,
+      "passed": true
+    },
+    {
+      "case_id": "incident_chip-shortage",
+      "name": "晶圆产能短缺分配复盘中采取了什么措施，有什么经验",
+      "query": "晶圆产能短缺分配复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-CHIP-SHORTAGE-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-CHIP-SHORTAGE-2026",
+        "ENT-SOP-SEMICONDUCTOR-ALLOCATION-001",
+        "ENT-CONTRACT-SUPPLIER-101",
+        "ENT-INCIDENT-PACKAGING-SHORTAGE-2026",
+        "ENT-PLAYBOOK-ALLOCATION-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.9,
+      "passed": true
+    },
+    {
+      "case_id": "incident_temp-excursion",
+      "name": "冷链温度偏离事件复盘中采取了什么措施，有什么经验",
+      "query": "冷链温度偏离事件复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-TEMP-EXCURSION-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-TEMP-EXCURSION-2026",
+        "ENT-SOP-COLD-CHAIN-001",
+        "ENT-CONTRACT-SUPPLIER-103",
+        "ENT-INCIDENT-CHIP-SHORTAGE-2026",
+        "ENT-INCIDENT-EARTHQUAKE-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.6,
+      "passed": true
+    },
+    {
+      "case_id": "incident_quality-recall",
+      "name": "关键部件质量召回复盘中采取了什么措施，有什么经验",
+      "query": "关键部件质量召回复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-QUALITY-RECALL-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-QUALITY-RECALL-2026",
+        "ENT-PLAYBOOK-RECALL-001",
+        "ENT-INCIDENT-PACKAGING-SHORTAGE-2026",
+        "ENT-SOP-PHARMA-TRACE-001",
+        "ENT-INCIDENT-CYBER-OUTAGE-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.64,
+      "passed": true
+    },
+    {
+      "case_id": "incident_customs-delay",
+      "name": "进口清关资料缺失复盘中采取了什么措施，有什么经验",
+      "query": "进口清关资料缺失复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-CUSTOMS-DELAY-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-CUSTOMS-DELAY-2026",
+        "ENT-INCIDENT-PACKAGING-SHORTAGE-2026",
+        "ENT-PLAYBOOK-CUSTOMS-001",
+        "ENT-INCIDENT-PORT-CONGESTION-2026",
+        "ENT-INCIDENT-QUALITY-RECALL-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.51,
+      "passed": true
+    },
+    {
+      "case_id": "incident_cyber-outage",
+      "name": "供应商网络攻击中断复盘中采取了什么措施，有什么经验",
+      "query": "供应商网络攻击中断复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-CYBER-OUTAGE-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-CYBER-OUTAGE-2026",
+        "ENT-INCIDENT-LABOR-STRIKE-2026",
+        "ENT-INCIDENT-FLOOD-2026",
+        "ENT-INCIDENT-PORT-CONGESTION-2026",
+        "ENT-INCIDENT-BANKRUPTCY-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.03,
+      "passed": true
+    },
+    {
+      "case_id": "incident_earthquake",
+      "name": "地震导致单一来源停产复盘中采取了什么措施，有什么经验",
+      "query": "地震导致单一来源停产复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-EARTHQUAKE-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-EARTHQUAKE-2026",
+        "ENT-INCIDENT-FLOOD-2026",
+        "ENT-INCIDENT-BANKRUPTCY-2026",
+        "ENT-INCIDENT-CHIP-SHORTAGE-2026",
+        "ENT-INCIDENT-PORT-CONGESTION-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.61,
+      "passed": true
+    },
+    {
+      "case_id": "incident_flood",
+      "name": "洪水造成内陆运输中断复盘中采取了什么措施，有什么经验",
+      "query": "洪水造成内陆运输中断复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-FLOOD-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-FLOOD-2026",
+        "INCIDENT-PORT-STRIKE-2025",
+        "ENT-INCIDENT-CYBER-OUTAGE-2026",
+        "ENT-INCIDENT-PORT-CONGESTION-2026",
+        "ENT-INCIDENT-LABOR-STRIKE-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.24,
+      "passed": true
+    },
+    {
+      "case_id": "incident_air-capacity",
+      "name": "旺季航空舱位紧张复盘中采取了什么措施，有什么经验",
+      "query": "旺季航空舱位紧张复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-AIR-CAPACITY-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-AIR-CAPACITY-2026",
+        "ENT-INCIDENT-PORT-CONGESTION-2026",
+        "ENT-INCIDENT-PACKAGING-SHORTAGE-2026",
+        "INCIDENT-PORT-STRIKE-2025",
+        "ENT-CONTRACT-SUPPLIER-107"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.71,
+      "passed": true
+    },
+    {
+      "case_id": "incident_bankruptcy",
+      "name": "二级供应商破产风险复盘中采取了什么措施，有什么经验",
+      "query": "二级供应商破产风险复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-BANKRUPTCY-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-BANKRUPTCY-2026",
+        "ENT-INCIDENT-EARTHQUAKE-2026",
+        "ENT-INCIDENT-CYBER-OUTAGE-2026",
+        "ENT-INCIDENT-LABOR-STRIKE-2026",
+        "ENT-INCIDENT-CHIP-SHORTAGE-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 6.99,
+      "passed": true
+    },
+    {
+      "case_id": "incident_labor-strike",
+      "name": "工厂罢工交付中断复盘中采取了什么措施，有什么经验",
+      "query": "工厂罢工交付中断复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-LABOR-STRIKE-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-LABOR-STRIKE-2026",
+        "ENT-INCIDENT-CYBER-OUTAGE-2026",
+        "INCIDENT-PORT-STRIKE-2025",
+        "ENT-INCIDENT-FLOOD-2026",
+        "ENT-INCIDENT-CHIP-SHORTAGE-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.63,
+      "passed": true
+    },
+    {
+      "case_id": "incident_packaging-shortage",
+      "name": "包装材料短缺复盘中采取了什么措施，有什么经验",
+      "query": "包装材料短缺复盘中采取了什么措施，有什么经验",
+      "tags": [
+        "incident",
+        "lesson"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-INCIDENT-PACKAGING-SHORTAGE-2026"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-INCIDENT-PACKAGING-SHORTAGE-2026",
+        "ENT-INCIDENT-CHIP-SHORTAGE-2026",
+        "ENT-INCIDENT-QUALITY-RECALL-2026",
+        "ENT-PLAYBOOK-ALLOCATION-001",
+        "ENT-INCIDENT-CUSTOMS-DELAY-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.85,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_alternate-source",
+      "name": "发生替代供方问题时应该按照什么步骤处置",
+      "query": "发生替代供方问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-ALTERNATE-SOURCE-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-SUPPLIER-RECOVERY-001",
+        "ENT-PLAYBOOK-ALTERNATE-SOURCE-001",
+        "ENT-SOP-QUALITY-QUARANTINE-001",
+        "CASE-SUPPLY-001",
+        "ENT-PLAYBOOK-CAPACITY-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5,
+      "recall_at_1": 0.0,
+      "precision_at_1": 0.0,
+      "hit_rate_at_1": 0.0,
+      "ndcg_at_1": 0.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 0.6309,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 0.6309,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.44,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_expedite",
+      "name": "发生加急运输问题时应该按照什么步骤处置",
+      "query": "发生加急运输问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-EXPEDITE-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-EXPEDITE-001",
+        "SOP-LOGISTICS-001",
+        "ENT-INCIDENT-PORT-CONGESTION-2026",
+        "CASE-SUPPLY-001",
+        "INCIDENT-PORT-STRIKE-2025"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.82,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_allocation",
+      "name": "发生短缺分配问题时应该按照什么步骤处置",
+      "query": "发生短缺分配问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-ALLOCATION-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-ALLOCATION-001",
+        "ENT-INCIDENT-CHIP-SHORTAGE-2026",
+        "ENT-SOP-SEMICONDUCTOR-ALLOCATION-001",
+        "ENT-INCIDENT-PACKAGING-SHORTAGE-2026",
+        "ENT-PLAYBOOK-EXPEDITE-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.37,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_recall",
+      "name": "发生产品召回问题时应该按照什么步骤处置",
+      "query": "发生产品召回问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-RECALL-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-RECALL-001",
+        "ENT-INCIDENT-QUALITY-RECALL-2026",
+        "ENT-SOP-PHARMA-TRACE-001",
+        "ENT-PLAYBOOK-SUPPLIER-RECOVERY-001",
+        "ENT-PLAYBOOK-ALTERNATE-SOURCE-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.34,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_customs",
+      "name": "发生清关异常问题时应该按照什么步骤处置",
+      "query": "发生清关异常问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-CUSTOMS-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-CUSTOMS-001",
+        "ENT-INCIDENT-CUSTOMS-DELAY-2026",
+        "ENT-PLAYBOOK-DATA-QUALITY-001",
+        "ENT-SOP-DEMAND-SPIKE-001",
+        "ENT-PLAYBOOK-QUALITY-ESCALATION-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.8,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_supplier-recovery",
+      "name": "发生交付恢复问题时应该按照什么步骤处置",
+      "query": "发生交付恢复问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-SUPPLIER-RECOVERY-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-SUPPLIER-RECOVERY-001",
+        "ENT-INCIDENT-PORT-CONGESTION-2026",
+        "ENT-CONTRACT-SUPPLIER-101",
+        "ENT-INCIDENT-LABOR-STRIKE-2026",
+        "SOP-SUPPLIER-SLA-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.96,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_data-quality",
+      "name": "发生主数据异常问题时应该按照什么步骤处置",
+      "query": "发生主数据异常问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-DATA-QUALITY-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-DATA-QUALITY-001",
+        "ENT-SOP-DEMAND-SPIKE-001",
+        "ENT-PLAYBOOK-CUSTOMS-001",
+        "ENT-PLAYBOOK-COST-CHANGE-001",
+        "ENT-PLAYBOOK-ALLOCATION-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 8.06,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_bcp",
+      "name": "发生业务连续性问题时应该按照什么步骤处置",
+      "query": "发生业务连续性问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-BCP-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-BCP-001",
+        "CASE-SUPPLY-001",
+        "ENT-PLAYBOOK-QUALITY-ESCALATION-001",
+        "ENT-PLAYBOOK-SUPPLIER-RECOVERY-001",
+        "ENT-PLAYBOOK-DATA-QUALITY-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.7,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_capacity",
+      "name": "发生产能爬坡问题时应该按照什么步骤处置",
+      "query": "发生产能爬坡问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-CAPACITY-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-CAPACITY-001",
+        "ENT-PLAYBOOK-ALTERNATE-SOURCE-001",
+        "ENT-CONTRACT-SUPPLIER-109",
+        "CASE-SUPPLY-001",
+        "ENT-PLAYBOOK-SUPPLIER-RECOVERY-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 8.18,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_quality-escalation",
+      "name": "发生质量升级问题时应该按照什么步骤处置",
+      "query": "发生质量升级问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-QUALITY-ESCALATION-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-QUALITY-ESCALATION-001",
+        "ENT-PLAYBOOK-DATA-QUALITY-001",
+        "ENT-PLAYBOOK-ALTERNATE-SOURCE-001",
+        "ENT-INCIDENT-QUALITY-RECALL-2026",
+        "ENT-PLAYBOOK-SUPPLIER-RECOVERY-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.77,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_late-inbound",
+      "name": "发生在途延期问题时应该按照什么步骤处置",
+      "query": "发生在途延期问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-LATE-INBOUND-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-LATE-INBOUND-001",
+        "CASE-SUPPLY-001",
+        "ENT-PLAYBOOK-EXPEDITE-001",
+        "ENT-SOP-OBSOLESCENCE-001",
+        "ENT-CONTRACT-SUPPLIER-101"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.68,
+      "passed": true
+    },
+    {
+      "case_id": "playbook_cost-change",
+      "name": "发生价格异常问题时应该按照什么步骤处置",
+      "query": "发生价格异常问题时应该按照什么步骤处置",
+      "tags": [
+        "playbook",
+        "operations"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-COST-CHANGE-001"
+      ],
+      "forbidden_document_ids": [],
+      "retrieved_document_ids": [
+        "ENT-PLAYBOOK-COST-CHANGE-001",
+        "ENT-SOP-DEMAND-SPIKE-001",
+        "ENT-PLAYBOOK-DATA-QUALITY-001",
+        "ENT-PLAYBOOK-CUSTOMS-001",
+        "ENT-PLAYBOOK-EXPEDITE-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "hit_rate_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 8.72,
+      "passed": true
+    },
+    {
+      "case_id": "governance_no_retired_expedite",
+      "name": "发生缺货时是否应该无条件采用空运加急",
+      "query": "发生缺货时是否应该无条件采用空运加急",
+      "tags": [
+        "negative-control",
+        "retired"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-PLAYBOOK-EXPEDITE-001"
+      ],
+      "forbidden_document_ids": [
+        "RET-EXPEDITE-2019"
+      ],
+      "retrieved_document_ids": [
+        "SOP-LOGISTICS-001",
+        "ENT-PLAYBOOK-EXPEDITE-001",
+        "SOP-INVENTORY-001",
+        "CASE-SUPPLY-001",
+        "ENT-INCIDENT-AIR-CAPACITY-2026"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5,
+      "recall_at_1": 0.0,
+      "precision_at_1": 0.0,
+      "hit_rate_at_1": 0.0,
+      "ndcg_at_1": 0.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 0.6309,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 0.6309,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 8.48,
+      "passed": true
+    },
+    {
+      "case_id": "governance_no_draft_auto_order",
+      "name": "模型是否可以绕过审批直接创建采购单",
+      "query": "模型是否可以绕过审批直接创建采购单",
+      "tags": [
+        "negative-control",
+        "draft"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "SOP-APPROVAL-001"
+      ],
+      "forbidden_document_ids": [
+        "DRAFT-AUTO-ORDER"
+      ],
+      "retrieved_document_ids": [
+        "ENT-CONTRACT-SUPPLIER-111",
+        "ENT-CONTRACT-SUPPLIER-101",
+        "SOP-APPROVAL-001",
+        "ENT-CONTRACT-SUPPLIER-104",
+        "ENT-CONTRACT-SUPPLIER-103"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 3,
+      "reciprocal_rank": 0.3333,
+      "recall_at_1": 0.0,
+      "precision_at_1": 0.0,
+      "hit_rate_at_1": 0.0,
+      "ndcg_at_1": 0.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 0.5,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 0.5,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 8.28,
+      "passed": true
+    },
+    {
+      "case_id": "governance_no_expired_contract",
+      "name": "供应商交付延期后的合同责任和升级要求",
+      "query": "供应商交付延期后的合同责任和升级要求",
+      "tags": [
+        "negative-control",
+        "expired"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "CONTRACT-SUPPLIER-FRAMEWORK-001"
+      ],
+      "forbidden_document_ids": [
+        "EXP-CONTRACT-2024"
+      ],
+      "retrieved_document_ids": [
+        "SOP-SUPPLIER-SLA-001",
+        "ENT-PLAYBOOK-SUPPLIER-RECOVERY-001"
+      ],
+      "recall_at_k": 0.0,
+      "first_relevant_rank": null,
+      "reciprocal_rank": 0.0,
+      "recall_at_1": 0.0,
+      "precision_at_1": 0.0,
+      "hit_rate_at_1": 0.0,
+      "ndcg_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "precision_at_3": 0.0,
+      "hit_rate_at_3": 0.0,
+      "ndcg_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "hit_rate_at_5": 0.0,
+      "ndcg_at_5": 0.0,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": false,
+      "duplicate_document_count": 0,
+      "latency_ms": 8.12,
+      "passed": false
+    },
+    {
+      "case_id": "governance_no_quality_waiver",
+      "name": "关键缺陷物料应该如何隔离和放行",
+      "query": "关键缺陷物料应该如何隔离和放行",
+      "tags": [
+        "negative-control",
+        "retired"
+      ],
+      "top_k": 5,
+      "metric_ks": [
+        1,
+        3,
+        5
+      ],
+      "expected_document_ids": [
+        "ENT-SOP-QUALITY-QUARANTINE-001"
+      ],
+      "forbidden_document_ids": [
+        "RET-QUALITY-WAIVER"
+      ],
+      "retrieved_document_ids": [
+        "ENT-SOP-COLD-CHAIN-001",
+        "ENT-PLAYBOOK-ALLOCATION-001",
+        "ENT-SOP-QUALITY-QUARANTINE-001",
+        "ENT-SOP-OBSOLESCENCE-001",
+        "ENT-SOP-DUAL-SOURCING-001"
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 3,
+      "reciprocal_rank": 0.3333,
+      "recall_at_1": 0.0,
+      "precision_at_1": 0.0,
+      "hit_rate_at_1": 0.0,
+      "ndcg_at_1": 0.0,
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333,
+      "hit_rate_at_3": 1.0,
+      "ndcg_at_3": 0.5,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_rate_at_5": 1.0,
+      "ndcg_at_5": 0.5,
+      "applicability_passed": true,
+      "invalid_document_ids": [],
+      "forbidden_leakage_passed": true,
+      "forbidden_hits": [],
+      "document_type_passed": true,
+      "duplicate_document_count": 0,
+      "latency_ms": 7.89,
+      "passed": true
+    }
+  ]
+}

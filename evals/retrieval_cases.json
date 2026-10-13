@@ -1,0 +1,65 @@
+{
+  "schema_version": "rag-retrieval-golden/v1",
+  "cases": [
+    {
+      "id": "inventory_replenishment_policy",
+      "query": "库存低于补货点且在途不能按时到达时应如何处理",
+      "top_k": 3,
+      "expected_document_ids": ["SOP-INVENTORY-001"],
+      "minimum_recall": 1.0,
+      "product_id": 2,
+      "supplier_ids": [1, 2],
+      "region": "cn"
+    },
+    {
+      "id": "supplier_delivery_sla",
+      "query": "供应商按时交付率和延迟升级要求",
+      "top_k": 3,
+      "expected_document_ids": ["SOP-SUPPLIER-SLA-001"],
+      "minimum_recall": 1.0,
+      "product_id": 3,
+      "supplier_ids": [1, 2],
+      "region": "cn"
+    },
+    {
+      "id": "expedite_policy",
+      "query": "缺货风险下何时允许加急运输",
+      "top_k": 3,
+      "expected_document_ids": ["SOP-LOGISTICS-001"],
+      "minimum_recall": 1.0,
+      "product_id": 3,
+      "supplier_ids": [1, 2],
+      "region": "cn"
+    },
+    {
+      "id": "approval_policy",
+      "query": "高风险采购需要什么角色审批",
+      "top_k": 3,
+      "expected_document_ids": ["SOP-APPROVAL-001"],
+      "minimum_recall": 1.0,
+      "product_id": 2,
+      "supplier_ids": [1, 2],
+      "region": "cn"
+    },
+    {
+      "id": "contract_delivery_clause",
+      "query": "核心物料供应商合同交付周期与违约升级条款",
+      "top_k": 3,
+      "expected_document_ids": ["CONTRACT-SUPPLIER-FRAMEWORK-001"],
+      "minimum_recall": 1.0,
+      "product_id": 1,
+      "supplier_ids": [1],
+      "region": "cn"
+    },
+    {
+      "id": "port_disruption_incident",
+      "query": "港口罢工造成物流延误的历史处置经验",
+      "top_k": 3,
+      "expected_document_ids": ["INCIDENT-PORT-STRIKE-2025"],
+      "minimum_recall": 1.0,
+      "product_id": 3,
+      "supplier_ids": [1, 2, 3],
+      "region": "cn"
+    }
+  ]
+}

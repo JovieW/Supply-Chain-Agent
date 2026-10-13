@@ -1,0 +1,12 @@
+{
+  "schema_version": "rag-retrieval-thresholds/v1",
+  "minimum_case_pass_rate": 0.9,
+  "minimum_mean_recall_at_k": 0.9,
+  "minimum_mean_reciprocal_rank": 0.75,
+  "minimum_hard_case_pass_rate": 0.65,
+  "minimum_semantic_hard_positive_pass_rate": 0.8,
+  "minimum_cross_domain_pass_rate": 0.6,
+  "minimum_applicability_pass_rate": 1.0,
+  "maximum_forbidden_leakage_rate": 0.0,
+  "maximum_p95_latency_ms": 1000
+}

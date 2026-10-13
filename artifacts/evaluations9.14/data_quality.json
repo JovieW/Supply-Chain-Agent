@@ -1,0 +1,94 @@
+{
+  "schema_version": "enterprise-data-quality/v1",
+  "dataset_notice": "Enterprise-scale additions are deterministic synthetic data.",
+  "thresholds": {
+    "minimum_products": 100,
+    "minimum_suppliers": 25,
+    "minimum_demand_rows": 36000,
+    "minimum_verified_memories": 200,
+    "minimum_inventory_coverage": 1.0,
+    "minimum_policy_coverage": 1.0,
+    "minimum_offer_coverage": 1.0,
+    "minimum_history_180d_coverage": 0.95,
+    "minimum_knowledge_documents": 50,
+    "minimum_knowledge_chunks": 50,
+    "minimum_governance_metadata_coverage": 1.0,
+    "maximum_foreign_key_violations": 0,
+    "maximum_duplicate_document_ids": 0,
+    "schema_version": "enterprise-data-quality-thresholds/v1"
+  },
+  "database": {
+    "database_path": "/home/wangjingwen/project/Multi-Agent-Supply-Chain-Control-Tower/data/supply_chain.db",
+    "counts": {
+      "products": 123,
+      "inventory": 123,
+      "inventory_policies": 123,
+      "suppliers": 33,
+      "product_suppliers": 487,
+      "supplier_offers": 487,
+      "demand_history": 43968,
+      "purchase_orders": 242,
+      "shipments": 92,
+      "decision_memories": 240,
+      "outcome_feedback": 240
+    },
+    "active_supplier_mappings": 475,
+    "coverage": {
+      "inventory": 1.0,
+      "inventory_policy": 1.0,
+      "active_supplier_mapping": 1.0,
+      "supplier_offer": 1.0,
+      "demand_history_180_days": 0.9756
+    },
+    "verified_memories": 240,
+    "outcome_distribution": {
+      "FAILURE": 48,
+      "MIXED": 96,
+      "SUCCESS": 96
+    },
+    "supplier_reliability_distribution": {
+      "high": 5,
+      "low": 15,
+      "medium": 13
+    },
+    "foreign_key_violation_count": 0,
+    "foreign_key_violations": []
+  },
+  "knowledge": {
+    "knowledge_dir": "/home/wangjingwen/project/Multi-Agent-Supply-Chain-Control-Tower/data/knowledge",
+    "documents": 59,
+    "chunks": 121,
+    "document_type_distribution": {
+      "sop": 57,
+      "contract": 31,
+      "historical_event": 30,
+      "general": 3
+    },
+    "status_distribution": {
+      "active": 56,
+      "draft": 1,
+      "retired": 2
+    },
+    "expired_document_count": 1,
+    "governance_metadata_coverage": 1.0,
+    "duplicate_document_id_count": 0,
+    "duplicate_document_ids": {},
+    "average_chunk_characters": 45.6
+  },
+  "passed": true,
+  "quality_gates": {
+    "minimum_products": true,
+    "minimum_suppliers": true,
+    "minimum_demand_rows": true,
+    "minimum_verified_memories": true,
+    "minimum_inventory_coverage": true,
+    "minimum_policy_coverage": true,
+    "minimum_offer_coverage": true,
+    "minimum_history_180d_coverage": true,
+    "minimum_knowledge_documents": true,
+    "minimum_knowledge_chunks": true,
+    "minimum_governance_metadata_coverage": true,
+    "maximum_foreign_key_violations": true,
+    "maximum_duplicate_document_ids": true
+  }
+}

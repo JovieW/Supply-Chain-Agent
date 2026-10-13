@@ -1,0 +1,28 @@
+
+# LangChain ecosystem
+langgraph>=0.2.31,<2.0.0
+langgraph-checkpoint-sqlite>=2.0.0,<4.0.0
+langchain>=0.3.0
+langchain-openai>=0.2.0
+
+# Persistent enterprise vector knowledge base
+chromadb>=1.0.0,<2.0.0
+sentence-transformers>=3.0.0,<6.0.0
+pypdf>=5.0.0
+python-docx>=1.1.0
+
+# Database
+sqlalchemy>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+streamlit>=1.50.0,<2.0.0
+
+# Dataset/experiment evaluation API used by src/evaluation/langsmith_runner.py
+langsmith>=0.3.13,<1.0.0
+
+aiosqlite>=0.19.0
+
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0

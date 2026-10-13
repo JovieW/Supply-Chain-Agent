@@ -1,0 +1,6 @@
+# The local BGE embedding stack imports transformers. Streamlit's module watcher
+# can probe optional vision modules (for example ZoeDepth), which are not used by
+# this project and may require torchvision. Disable source watching to avoid that
+# unrelated optional-dependency import. Restart Streamlit after source changes.
+[server]
+fileWatcherType = "none"

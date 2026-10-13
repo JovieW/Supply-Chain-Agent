@@ -1,0 +1,16 @@
+{
+  "schema_version": "enterprise-data-quality-thresholds/v1",
+  "minimum_products": 100,
+  "minimum_suppliers": 25,
+  "minimum_demand_rows": 36000,
+  "minimum_verified_memories": 200,
+  "minimum_inventory_coverage": 1.0,
+  "minimum_policy_coverage": 1.0,
+  "minimum_offer_coverage": 1.0,
+  "minimum_history_180d_coverage": 0.95,
+  "minimum_knowledge_documents": 50,
+  "minimum_knowledge_chunks": 50,
+  "minimum_governance_metadata_coverage": 1.0,
+  "maximum_foreign_key_violations": 0,
+  "maximum_duplicate_document_ids": 0
+}
